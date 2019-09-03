@@ -17,7 +17,7 @@ public class HullPiece : MonoBehaviour {
     void Update () {
 		if ((Timeout -= Time.deltaTime) <= 0f)
         {
-            GameManager.Instance.hullManager.HullPieces.Remove(this.gameObject);
+            GameManager.Instance.hullManager.HullPieces.Remove(gameObject);
             Destroy(this.gameObject);
         }
 
